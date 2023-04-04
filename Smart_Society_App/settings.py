@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,7 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     'landing',
-    'main',
+    'mainApp',
 ]
 
 MIDDLEWARE = [
