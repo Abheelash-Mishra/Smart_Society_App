@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
@@ -35,6 +36,7 @@ class DeletePost(DeleteView):
     model = Post
     template_name = "delete_post.html"
     success_url = reverse_lazy("content_list")
+
 class SocialPosts(View):
     def get(self, request, *args, **kwargs):
         content_posts = Post.objects.all().order_by("-created")
