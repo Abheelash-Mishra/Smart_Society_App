@@ -1,7 +1,105 @@
 {% extends "base_layout.html" %}
 
 {% block content %}
-    <div>
-        <h1>Test</h1>
+    <div class="main_container">
+        <div class="about_container" id="about">
+            <img src="./assets/society_img.jpg" alt="">
+            <h1>XYZ Housing Centralia</h1>
+            <p><span class="boldTag">Address: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda nemo atque nihil praesentium ad officia, quidem iste, voluptatibus ea necessitatibus doloremque sint. </p>
+            <p><span class="boldTag">Society ID: </span>AXB664S5DT</p>
+            <p><span class="boldTag">Established In: </span>2021</p>
+            <p><span class="boldTag">Chairman: </span>Mr. Eren Yeager</p>
+            <p><span class="boldTag">Secretary: </span>Mr. Levi Ackermann</p>
+        </div>
+        <h1 id="visitor">Visitors</h1>
+        <div class="visitors_container">
+            <div class="button_circles">
+                <i class="fa-solid fa-person fa-2xl"></i>
+                <p>Add Daily Help</p>
+            </div>
+            <div class="button_circles">
+                <i class="fa-solid fa-person fa-2xl"></i>
+                <p>Pre-Approve</p>
+            </div>
+            <div class="button_circles">
+                <i class="fa-solid fa-right-to-bracket fa-2xl"></i>
+                <p>Auto Approvals</p>
+            </div>
+            <div class="button_circles">
+                <i class="fa-solid fa-arrow-right fa-2xl"></i>
+                <p>View All</p>
+            </div>
+        </div>
+        <h1 id="resident">Residents</h1>
+        <div class="residents_container">
+            <div id="1st">
+                <h2>1st Floor</h2>
+                <p><strong>101: </strong>To</p>
+                <p><strong>102: </strong>Be</p>
+                <p><strong>103: </strong>Added</p>
+                <p><strong>104: </strong>Automatically</p>
+                <p><strong>105: </strong>Via</p>
+                <p><strong>106: </strong>Backend</p>
+            </div>
+            <div id="2nd">
+                <h2>2nd Floor</h2>
+                <p><strong>201: </strong>To</p>
+                <p><strong>202: </strong>Be</p>
+                <p><strong>203: </strong>Added</p>
+                <p><strong>204: </strong>Automatically</p>
+                <p><strong>205: </strong>Via</p>
+                <p><strong>206: </strong>Backend</p>
+            </div>
+            <div id="3rd">
+                <h2>3rd Floor</h2>
+                <p><strong>301: </strong>To</p>
+                <p><strong>302: </strong>Be</p>
+                <p><strong>303: </strong>Added</p>
+                <p><strong>304: </strong>Automatically</p>
+                <p><strong>305: </strong>Via</p>
+                <p><strong>306: </strong>Backend</p>
+            </div>
+            <div id="4th">
+                <h2>4th Floor</h2>
+                <p><strong>401: </strong>To</p>
+                <p><strong>402: </strong>Be</p>
+                <p><strong>403: </strong>Added</p>
+                <p><strong>404: </strong>Automatically</p>
+                <p><strong>405: </strong>Via</p>
+                <p><strong>406: </strong>Backend</p>
+            </div>
+            <div id="5th">
+                <h2>5th Floor</h2>
+                <p><strong>501: </strong>To</p>
+                <p><strong>502: </strong>Be</p>
+                <p><strong>503: </strong>Added</p>
+                <p><strong>504: </strong>Automatically</p>
+                <p><strong>505: </strong>Via</p>
+                <p><strong>506: </strong>Backend</p>
+            </div>
+        </div>
+
+        <h1 id="tenant">Add Tenant Details</h1>
+        <div class="tenant_container">
+            <form id="tenant_form">
+                <label>
+                    <p>Designation of Tenant</p>
+                    <input type="text" placeholder="Eg: Landlord, Secretary, Tenant" required>
+                </label>
+                <label>
+                    <p>Age of Person</p>
+                    <input type="number" min="1" max="100" required>
+                </label>
+                <label>
+                    <p>Phone Number</p>
+                    <input type="text" required>
+                </label>
+                <label>
+                    <p>Address</p>
+                    <input type="text" required>
+                </label>
+            </form>
+            <button>Submit</button>
+        </div>
     </div>
 {% endblock %}
