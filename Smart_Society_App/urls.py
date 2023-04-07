@@ -22,4 +22,5 @@ urlpatterns = [
     path("accounts/", include('allauth.urls')),
     path("", include("landing.urls")),
     path("main/", include("mainApp.urls")),
+    path("main/communications/", include("communications.urls"))
 ]
