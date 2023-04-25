@@ -180,7 +180,7 @@ class removeFollower(LoginRequiredMixin, View):
 
 class EditProfileView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Profile
-    fields = ["name","bio","birthday","picture"]
+    fields = ["name","bio","birthday","picture","flat_no","contact_no"]
     template_name = "edit_profile.html"
 
     def get_success_url(self):

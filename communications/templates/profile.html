@@ -26,14 +26,20 @@
                     <h2>{{ profile.name }}</h2>
                 {% endif %}
 
-                {% if profile.birthday %}
-                    <h3>DOB: {{ profile.birthday }}</h3>
-                {% endif %}
+                <br>
 
                 {% if profile.bio %}
                     <p>{{ profile.bio }}</p>
                 {% endif %}
+
+                <p><strong>Flat Number: </strong> {{ profile.flat_no }}</p>
+
+                {% if user.is_superuser %}
+                <p><strong>Contact Number: </strong> {{ profile.contact_no }}</p>
+                {% endif %}
+
                 <h4>Followers: {{ followers_count }}</h4>
+                <br>
                 {% if user == request.user %}
                 {% else %}
                     {% if is_a_follower %}
@@ -51,7 +57,7 @@
             </div>
 
         </div>
-        <h2>Your Posts</h2>
+        <h2>Their Posts</h2>
 
         {% for post in posts %}
             <div class="mb-5"
