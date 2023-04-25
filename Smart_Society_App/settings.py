@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'landing',
     'mainApp',
     'communications',
+    'residents',
 ]
 
 MIDDLEWARE = [

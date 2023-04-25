@@ -12,26 +12,6 @@ from django.views.generic import UpdateView, DeleteView
 
 # Create your views here.
 
-# class EditPost(UpdateView):
-#     model = Post
-#     fields = ["body"]
-#     template_name =  "edit_post.html"
-#
-#     def get_success_url(self):
-#
-
-# def post_view(request, post_id):
-#     post = Post.objects.get(id=post_id)
-#     return render(request, 'content_list.html', {'post': post})
-# def edit_post(request, post_id):
-#     post = Post.objects.get(id=post_id)
-#     if request.method == 'POST':
-#         post.body = request.POST.get('body')
-#         post.save()
-#         return redirect(post_view, post_id=post.id)
-#     return render(request, 'edit_post.html', {'post': post})
-
-
 class DeletePost(DeleteView):
     model = Post
     template_name = "delete_post.html"
