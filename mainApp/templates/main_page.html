@@ -1,25 +1,24 @@
 {% extends "base_layout.html" %}
 
 {% block stylesheet %}
-    {% load static %}
+{% load static %}
     <link rel="stylesheet" href="{% static 'mainApp/main_page.css' %}">
-{% endblock stylesheet %}
+{% endblock stylesheet%}
+
 {% block content %}
     <div class="main_container">
         <div class="about_container" id="about">
-{#            <img src="./assets/society_img.jpg" alt="">#}
             <h1>XYZ Housing Centralia</h1>
             <div class="d-flex justify-content-end">
-            <div class ="add-text ">
-
-
-            <p><span class="boldTag">Address: </span>Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. </p>
-            <p><span class="boldTag">Society ID: </span>AXB664S5DT</p>
-            <p><span class="boldTag">Established In: </span>2021</p>
-            <p><span class="boldTag">Chairman: </span>Mr. Eren Yeager</p>
-            <p><span class="boldTag">Secretary: </span>Mr. Levi Ackermann</p>
-            </div>
+                <img src="{% static 'society.jpeg' %}" alt="">
+                <div class ="add-text">
+                    <p><span class="boldTag">Address: </span>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. </p>
+                    <p><span class="boldTag">Society ID: </span>AXB664S5DT</p>
+                    <p><span class="boldTag">Established In: </span>2021</p>
+                    <p><span class="boldTag">Chairman: </span>Mr. Eren Yeager</p>
+                    <p><span class="boldTag">Secretary: </span>Mr. Levi Ackermann</p>
+                </div>
             </div>
         </div>
 

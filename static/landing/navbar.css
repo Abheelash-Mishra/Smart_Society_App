@@ -1,13 +1,16 @@
 nav {
   display: flex;
+  border: 0px solid;
+  border-radius: 5px;
   width: 100%;
   padding: 10px 0;
+  margin: 10px 0;
   justify-content: center;
   background-color: #088F8F;
   position: sticky;
   cursor: pointer;
 }
 li {
-    margin-left: 50px;
+  margin-left: 20px;
   float: left;
 }

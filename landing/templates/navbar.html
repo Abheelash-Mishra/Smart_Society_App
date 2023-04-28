@@ -23,32 +23,14 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'residents' %}">Residents</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Visitors</a>
+                        <a class="nav-link active" aria-current="page" href="https://tmkamal.github.io/under-construction-template/">Visitors</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'content_list' %}">Communications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Notice Board</a>
+                        <a class="nav-link active" aria-current="page" href="https://tmkamal.github.io/under-construction-template/">Notice Board</a>
                     </li>
-{#                    <li class="nav-item dropdown">#}
-{#                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"#}
-{#                           data-bs-toggle="dropdown" aria-expanded="false">#}
-{#                            Meme Stuff#}
-{#                        </a>#}
-{#                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">#}
-{#                            <li><a class="dropdown-item" href="#">Never</a></li>#}
-{#                            <li><a class="dropdown-item" href="#">Gonna</a></li>#}
-{#                            <li><a class="dropdown-item" href="#">Give</a></li>#}
-{#                            <li><a class="dropdown-item" href="#">You</a></li>#}
-{#                            <li><a class="dropdown-item" href="#">Up</a></li>#}
-{##}
-{#                            <li>#}
-{#                                <hr class="dropdown-divider">#}
-{#                            </li>#}
-{#                            <li><a class="dropdown-item" href="#">Rick Roll Time</a></li>#}
-{#                        </ul>#}
-{#                    </li>#}
                 </ul>
                     <form class="d-flex" method="GET" action="{% url 'search_user' %}">
                         <input class="form-control me-2" type="search" name="query" value="{{ request.GET.query }}" placeholder="@User" aria-label="Search">
@@ -59,7 +41,6 @@
                                aria-expanded="false"><i class="fas fa-user"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="{% url "profile" user.id %}" class="dropdown-item">Profile</a></li>
-                                <li><a href="#" class="dropdown-item">Settings</a></li>
                                 <li><a href="{% url 'account_logout' %}" class="dropdown-item">Sign Out</a></li>
                             </ul>
                         </div>

@@ -6,7 +6,7 @@ from communications.models import Profile
 # Create your views here.
 class Residents(View):
     def get(self, request, *args, **kwargs):
-        profile = Profile.objects.all().order_by("-flat_no")
+        profile = Profile.objects.all().order_by("flat_no")
 
         context = {
             "profile":profile,
