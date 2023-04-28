@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Instrument+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap');
+
+* {
+    background-color: #F9F6EE;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.about_container{
+    padding-top: 50px;
+    padding-bottom: 230px;
+
+}
+.about_container> h1{
+    font-family: 'Instrument Serif', serif;
+}
+
+.add-text {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+}
+.visitors_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #198754;
+  width: 1100px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+    margin-left: 150px;
+}
+#visitor{
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+}
+.button_circles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.button_circles > i {
+  padding: 30px;
+  margin: 0 40px;
+  border-radius: 50%;
+  background-color: #ece7e7;
+}
+
+.visitors_container i:hover{
+    cursor: pointer;
+    color: #198754;
+    box-shadow: 10px 30px 90px 20px #088F8F;
+
+}

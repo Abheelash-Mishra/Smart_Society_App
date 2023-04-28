@@ -2,17 +2,64 @@
 
 {% block content %}
 
-    <div class="container">
-        <div style="border: solid 1px black; border-radius: 10px; width: 100%; background-color: white">
-            <div class="row justify-content-center mt-5 mb-5">
-                <div class="col-md-5 col-sm-15 border-bottom">
-                    {% for resident in profile %}
-                        {{ resident.flat_no }}
-                        <br>
-                    {% endfor %}
-                </div>
+{#    <div class="container">#}
+{#        <div style="border: solid 1px black; border-radius: 10px; width: 100%; background-color: white">#}
+{#            <div class="row justify-content-center mt-5 mb-5">#}
+{#                <div class="col-md-5 col-sm-15 border-bottom">#}
+{#                    {% for resident in profile %}#}
+{#                        {{ resident.flat_no }}#}
+{#                        <br>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+     <h1 id="resident">Residents</h1>
+        <div class="residents_container">
+            <div id="1st">
+                <h2>1st Floor</h2>
+                <p><strong>101: </strong>To</p>
+                <p><strong>102: </strong>Be</p>
+                <p><strong>103: </strong>Added</p>
+                <p><strong>104: </strong>Automatically</p>
+                <p><strong>105: </strong>Via</p>
+                <p><strong>106: </strong>Backend</p>
             </div>
-        </div>
-    </div>
+            <div id="2nd">
+                <h2>2nd Floor</h2>
+                <p><strong>201: </strong>To</p>
+                <p><strong>202: </strong>Be</p>
+                <p><strong>203: </strong>Added</p>
+                <p><strong>204: </strong>Automatically</p>
+                <p><strong>205: </strong>Via</p>
+                <p><strong>206: </strong>Backend</p>
+            </div>
+            <div id="3rd">
+                <h2>3rd Floor</h2>
+                <p><strong>301: </strong>To</p>
+                <p><strong>302: </strong>Be</p>
+                <p><strong>303: </strong>Added</p>
+                <p><strong>304: </strong>Automatically</p>
+                <p><strong>305: </strong>Via</p>
+                <p><strong>306: </strong>Backend</p>
+            </div>
+            <div id="4th">
+                <h2>4th Floor</h2>
+                <p><strong>401: </strong>To</p>
+                <p><strong>402: </strong>Be</p>
+                <p><strong>403: </strong>Added</p>
+                <p><strong>404: </strong>Automatically</p>
+                <p><strong>405: </strong>Via</p>
+                <p><strong>406: </strong>Backend</p>
+            </div>
+            <div id="5th">
+                <h2>5th Floor</h2>
+                <p><strong>501: </strong>To</p>
+                <p><strong>502: </strong>Be</p>
+                <p><strong>503: </strong>Added</p>
+                <p><strong>504: </strong>Automatically</p>
+                <p><strong>505: </strong>Via</p>
+                <p><strong>506: </strong>Backend</p>
+            </div>
 
 {% endblock %}
