@@ -5,8 +5,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
-from .models import Post, Comment, Profile
-from .forms import Post_Entry, Comment_Entry
+from .models import Post, Profile
+from .forms import Post_Entry
 from django.shortcuts import redirect
 from django.views.generic import UpdateView, DeleteView
 
@@ -21,12 +21,10 @@ class SocialPosts(View):
     def get(self, request, *args, **kwargs):
         content_posts = Post.objects.all().order_by("-created")
         form = Post_Entry()
-        comment = Comment_Entry()
 
         context = {
             "content_list":content_posts,
             "form":form,
-            "comment":comment,
         }
 
         return render(request, "content_list.html", context)
@@ -35,14 +33,6 @@ class SocialPosts(View):
         content_posts = Post.objects.all().order_by("-created")
         comment_posts = Post.objects.all()
         form = Post_Entry(request.POST)
-        comment_form = Comment_Entry(request.POST)
-
-        if comment_form.is_valid():
-            new_comment = comment_form.save(commit=False)
-            new_comment.author = request.user
-            new_comment.post = comment_posts
-
-        # comments = Comment.objects.filter(post=comment_posts).order_by("-created")
 
         if form.is_valid():
             new_post = form.save(commit=False)

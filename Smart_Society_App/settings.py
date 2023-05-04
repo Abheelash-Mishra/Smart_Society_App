@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'mainApp',
     'communications',
     'residents',
+    'events',
 ]
 
 MIDDLEWARE = [
