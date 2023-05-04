@@ -78,12 +78,13 @@
   filter: drop-shadow(0 0 1px #000);
 }
 
-.container form .submit-btn{
+a{
   width: 100%;
   padding:12px;
   font-size: 17px;
   background: #27ae60;
   color:#fff;
+  text-decoration: none;
   margin-top: 5px;
   cursor: pointer;
 }
