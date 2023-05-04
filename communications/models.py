@@ -23,7 +23,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=30, blank=True, null=True)
     bio = models.TextField(blank= True, null=True)
     birthday = models.DateField(blank= True, null=True)
-    picture = models.ImageField(upload_to="uploads/profile_pic", default="uploads/profile_pic/dafault_PP.png", blank=True)
+    picture = models.ImageField(upload_to="uploads/profile_pic", default="uploads/profile_pic/default_PP.jpg", blank=True)
     followers = models.ManyToManyField(User, blank=True, related_name="followers")
     flat_no = models.CharField(max_length=6, default="N/A")
     contact_no = models.CharField(max_length=13, default="N/A")

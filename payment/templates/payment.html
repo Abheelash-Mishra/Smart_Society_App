@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'payment/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input
+                            type="text"
+                            onkeydown="return /[a-z]/i.test(event.key)"
+                            name=""
+                            placeholder="John Deo"
+                    />
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com"/>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality"/>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input
+                            type="text"
+                            onkeydown="return /[a-z]/i.test(event.key)"
+                            name=""
+                            placeholder="Mumbai"
+                    />
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input
+                                type="text"
+                                onkeydown="return /[a-z]/i.test(event.key)"
+                                name=""
+                                placeholder="India"
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                type="number"
+                                name=""
+                                maxlength="6"
+                                placeholder="123456"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="{% static 'payment/card_img.png' %}" alt=""/>
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input
+                            type="text"
+                            onkeydown="return /[a-z]/i.test(event.key)"
+                            name=""
+                            placeholder="John Deo"
+                    />
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number"
+                            name=""
+                            maxlength="16"
+                            placeholder="1111222233334444"
+                    />
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="number"
+                            name=""
+                            maxlength="2"
+                            min="01"
+                            max="12"
+                            placeholder="01"
+                    />
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                type="number"
+                                name=""
+                                maxlength="4"
+                                placeholder="2022"
+                        />
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                type="number"
+                                name=""
+                                maxlength="3"
+                                placeholder="123"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="proceed to checkout" class="submit-btn"/>
+        <a href="{% url 'success' %}">Proceed</a>
+    </form>
+</div>
+</body>
+</html>
