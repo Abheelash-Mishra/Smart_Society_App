@@ -1,9 +1,9 @@
 {% extends "base_layout.html" %}
 
 {% block stylesheet %}
-{% load static %}
+    {% load static %}
     <link rel="stylesheet" href="{% static 'mainApp/main_page.css' %}">
-{% endblock stylesheet%}
+{% endblock stylesheet %}
 
 {% block content %}
     <div class="main_container">
@@ -11,7 +11,7 @@
             <h1>XYZ Housing Centralia</h1>
             <div class="d-flex justify-content-end">
                 <img src="{% static 'society.jpeg' %}" alt="">
-                <div class ="add-text">
+                <div class="add-text">
                     <p><span class="boldTag">Address: </span>Lorem ipsum dolor sit amet
                         consectetur adipisicing elit. </p>
                     <p><span class="boldTag">Society ID: </span>AXB664S5DT</p>
@@ -22,24 +22,43 @@
             </div>
         </div>
 
-        <h1 id="visitor">Visitors</h1>
-        <div class="visitors_container">
-            <div class="button_circles">
-                <i class="fa-solid fa-person fa-2xl"></i>
-                <p>Add Daily Help</p>
-            </div>
-            <div class="button_circles">
-                <i class="fa-solid fa-person fa-2xl"></i>
-                <p>Pre-Approve</p>
-            </div>
-            <div class="button_circles">
-                <i class="fa-solid fa-right-to-bracket fa-2xl"></i>
-                <p>Auto Approvals</p>
-            </div>
-            <div class="button_circles">
-                <i class="fa-solid fa-arrow-right fa-2xl"></i>
-                <p>View All</p>
-            </div>
-        </div>
+        {#        <h1 id="visitor">Visitors</h1>#}
+        {#        <div class="visitors_container">#}
+        {#            <div class="button_circles">#}
+        {#                <i class="fa-solid fa-person fa-2xl"></i>#}
+        {#                <p>Add Daily Help</p>#}
+        {#            </div>#}
+        {#            <div class="button_circles">#}
+        {#                <i class="fa-solid fa-person fa-2xl"></i>#}
+        {#                <p>Pre-Approve</p>#}
+        {#            </div>#}
+        {#            <div class="button_circles">#}
+        {#                <i class="fa-solid fa-right-to-bracket fa-2xl"></i>#}
+        {#                <p>Auto Approvals</p>#}
+        {#            </div>#}
+        {#            <div class="button_circles">#}
+        {#                <i class="fa-solid fa-arrow-right fa-2xl"></i>#}
+        {#                <p>View All</p>#}
+        {#            </div>#}
+        {#        </div>#}
+
+        <h1>About Us</h1>
+        <p class="about_us">Welcome to Harmony Heights, a modern and vibrant housing society established in 2021. Our society is located
+            in the heart of the city, providing easy access to a wide range of amenities and facilities.
+            At Harmony Heights, we believe in creating a community that fosters a sense of belonging and togetherness.
+            Our society is home to a diverse group of residents, from young professionals to families and retirees, all
+            of whom contribute to the rich tapestry of our community. <br><br>
+
+            We take great pride in our state-of-the-art facilities, including a fully-equipped gym, swimming pool,
+            clubhouse, and landscaped gardens. Our society is also equipped with 24-hour security and surveillance
+            systems, ensuring the safety and security of our residents at all times.
+
+            At Harmony Heights, we believe in promoting a sustainable and eco-friendly lifestyle. Our society is
+            committed to implementing green initiatives, such as rainwater harvesting, waste segregation, and solar
+            power, to reduce our environmental impact and promote a healthier, more sustainable future.
+
+            We are dedicated to providing our residents with a comfortable and fulfilling living experience, and we are
+            constantly working to improve and enhance our facilities and services. We welcome you to join our community
+            and experience the warmth and harmony of Harmony Heights.</p>
     </div>
 {% endblock content %}
